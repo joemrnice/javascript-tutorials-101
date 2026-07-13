@@ -1,8 +1,16 @@
 {
+  "name": "javascript-tutorials-101",
+  "version": "1.0.0",
+  "description": "[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/joemrnice/javascript-tutorials-101)",
+  "main": "script.js",
   "scripts": {
     "start": "servor --reload"
   },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
+    "@inquirer/input": "^5.1.2",
     "servor": "^4.0.2"
   }
 }

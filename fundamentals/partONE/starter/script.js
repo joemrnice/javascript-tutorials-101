@@ -1,0 +1,7 @@
+import { input } from '@inquirer/prompts';
+// Or
+// import input from '@inquirer/input';
+
+const favourite = await input({ message: 'What is your favourite number?' });
+console.log(favourite);
+console.log(typeof favourite);

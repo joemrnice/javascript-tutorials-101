@@ -150,16 +150,16 @@ console.log(BMIIsho, BMISammy, ishoHigherBMI);
 
 ////////////////////////////////////
 // Strings and Template Literals
-const firstName = 'Jonas';
-const job = 'teacher';
-const birthYear = 1991;
-const year = 2037;
+const firstName = 'Sammy';
+const job = 'barber';
+const birthYear = 1989;
+const year = 2027;
 
-const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
-console.log(jonas);
+const sammy = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+console.log(sammy);
 
-const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
-console.log(jonasNew);
+const sammyNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(sammyNew);
 
 console.log(`Just a regular string...`);
 
@@ -177,10 +177,10 @@ lines`);
 const age = 15;
 
 if (age >= 18) {
-  console.log('Sarah can start driving license 🚗');
+  console.log('Mimi can start driving license 🚗');
 } else {
   const yearsLeft = 18 - age;
-  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+  console.log(`Mimi is too young. Wait another ${yearsLeft} years :)`);
 }
 
 const birthYear = 2012;
@@ -200,8 +200,8 @@ console.log(century);
 /*
 Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
 
-1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
-2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Isho's BMI is higher than Sammy's!" or "Sammy's BMI is higher than Isho's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Isho's BMI (28.3) is higher than Sammy's (23.9)!"
 
 HINT: Use an if/else statement 😉
 
@@ -209,24 +209,24 @@ GOOD LUCK 😀
 */
 
 /*
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+const massIsho = 78;
+const heightIsho = 1.69;
+const massSammy = 92;
+const heightSammy = 1.95;
 
-// const massMark = 95;
-// const heightMark = 1.88;
-// const massJohn = 85;
-// const heightJohn = 1.76;
+// const massIsho = 95;
+// const heightIsho = 1.88;
+// const massSammy = 85;
+// const heightSammy = 1.76;
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log(BMIMark, BMIJohn);
+const BMIIsho = massIsho / heightIsho ** 2;
+const BMISammy = massSammy / (heightSammy * heightSammy);
+console.log(BMIIsho, BMISammy);
 
-if (BMIMark > BMIJohn) {
-  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+if (BMIIsho > BMISammy) {
+  console.log(`Isho's BMI (${BMIIsho}) is higher than Sammy's (${BMISammy})!`)
 } else {
-  console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`)
+  console.log(`Sammy's BMI (${BMISammy}) is higher than Isho's (${BMIIsho})!`)
 }
 
 ////////////////////////////////////
@@ -257,19 +257,19 @@ console.log(n);
 // 5 falsy values: 0, '', undefined, null, NaN
 console.log(Boolean(0));
 console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
+console.log(Boolean('Willy'));
 console.log(Boolean({}));
 console.log(Boolean(''));
 
-const money = 100;
-if (money) {
+const hasMoney = 100;
+if (hasMoney) {
   console.log("Don't spend it all ;)");
 } else {
   console.log('You should get a job!');
 }
 
-let height = 0;
-if (height) {
+let heightDefined = 0;
+if (heightDefined) {
   console.log('YAY! Height is defined');
 } else {
   console.log('Height is UNDEFINED');
