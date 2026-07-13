@@ -9,14 +9,14 @@ const passTest = true;
 if (passTest) hasDriversLicense = true;
 if (hasDriversLicense) console.log('I can drive :D');
 
-// const interface = 'Audio';
-// const private = 534;
+// const interface = 'Audio'; // interface is a reserved keyword
+// const private = 534; // private as well '' ''
 
 
 ///////////////////////////////////////
 // Functions
 function logger() {
-  console.log('My name is Jonas');
+  console.log('My name is Joe');
 }
 
 // calling / running / invoking function
@@ -42,35 +42,35 @@ const num = Number('23');
 // Function Declarations vs. Expressions
 
 // Function declaration
-function calcAge1(birthYeah) {
-  return 2037 - birthYeah;
+function calcAge1(birthYear) {
+  return 2027 - birthYeah;
 }
-const age1 = calcAge1(1991);
+const ageDija1 = calcAge1(1993);
 
 // Function expression
-const calcAge2 = function (birthYeah) {
-  return 2037 - birthYeah;
+const calcAge2 = function (birthYear) {
+  return 2027 - birthYear;
 }
-const age2 = calcAge2(1991);
+const ageDija2 = calcAge2(1993);
 
-console.log(age1, age2);
+console.log(ageDija1, ageDija2);
 
 
 ///////////////////////////////////////
 // Arrow functions
 
-const calcAge3 = birthYeah => 2037 - birthYeah;
-const age3 = calcAge3(1991);
-console.log(age3);
+const calcAge3 = birthYear => 2027 - birthYear;
+const ageDija3 = calcAge3(1993);
+console.log(ageDija3);
 
-const yearsUntilRetirement = (birthYeah, firstName) => {
-  const age = 2037 - birthYeah;
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2027 - birthYear;
   const retirement = 65 - age;
   // return retirement;
   return `${firstName} retires in ${retirement} years`;
 }
 
-console.log(yearsUntilRetirement(1991, 'Jonas')); console.log(yearsUntilRetirement(1980, 'Bob'));
+console.log(yearsUntilRetirement(1993, 'Dija')); console.log(yearsUntilRetirement(1989, 'Sammy'));
 
 
 ///////////////////////////////////////
