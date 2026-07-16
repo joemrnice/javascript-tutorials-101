@@ -8,9 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "@inquirer/input": "^5.1.2",
-    "servor": "^4.0.2"
-  }
+  "license": "MIT"
 }

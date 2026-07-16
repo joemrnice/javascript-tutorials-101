@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Modern output */
+    "target": "ES2022",             // JS version to compile down to
+    "module": "ES2022",             // module system for output
+    "moduleResolution": "Bundler",  // how imports are resolved
+    "lib": ["ES2022", "DOM"],       // built-in type declarations to include
+ 
+    /* Project structure */
+    "rootDir": "./src",             // where your .ts source files live
+    "outDir": "./dist",             // where compiled .js files go
+ 
+    /* Strictness - always keep these on */
+    "strict": true,                 // enables ALL strict type-checking options
+    "noUncheckedIndexedAccess": true, // arr[i] is T | undefined, not just T
+    "noImplicitOverride": true,     // must use 'override' keyword explicitly
+    "exactOptionalPropertyTypes": true,
+ 
+    /* Code quality */
+    "noUnusedLocals": true,         // error on unused local variables
+    "noUnusedParameters": true,     // error on unused function parameters
+    "noFallthroughCasesInSwitch": true,
+ 
+    /* Interop & tooling */
+    "esModuleInterop": true,        // smoother interop with CommonJS modules
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,           // skip type-checking of .d.ts files (faster builds)
+    "declaration": true,            // emit .d.ts files for consumers of your library
+    "sourceMap": true               // emit .map files for debugging
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
