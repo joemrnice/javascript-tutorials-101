@@ -115,4 +115,45 @@ function createUser(name: string, role: string = "member"): object {
     return { name, role};
 }
 
+// Rest parameters - collects any number of extra arguments into an array
+function sum(...numbers: number[]): number {
+    return numbers.reduce((total, n) => total + n, 0);
+}
+sum(1, 2, 3, 4); // 10
 
+// Function Overloads
+// Overload signatures (no body) describe each supported call shape...
+function parseInput(value: string): string[];
+function parseInput(value: number): number;
+// ...followed by ONE implementation signature that handles every case.
+function parseInput(value: string | number): string[] | number {
+    if (typeof value === "string") {
+        return value.split(",");
+    }
+    return value * 2;
+}
+
+const parsed1 = parseInput("a, b, c"); // typed as string[]
+const parsed2 = parseInput(21); // typed as number
+
+// The 'this' Parameter
+// TypeScript lets you declare the expected type of 'this' as a fake
+// first parameter. It is removed at compile time and only used for checking.
+interface Clickable {
+    label: string;
+}
+
+function handleClick(this: Clickable, event: string): void {
+    console.log(`${this.label} received ${event}`);
+}
+
+// Function Types as Values
+// A variable can hold the TYPE of a function, useful for callbacks.
+type MathOperation = (a: number, b: number) => number;
+
+function calculate(a: number, b: number, operation: MathOperation): number {
+    return operation(a, b);
+}
+
+calculate(5, 3, add);
+calculate(5, 3, multiply);
